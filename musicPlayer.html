@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Beau+Rivage&family=Bebas+Neue&family=Cairo:wght@200&family=Comforter&family=Dancing+Script&family=Fascinate&family=Festive&family=Indie+Flower&family=Island+Moments&family=Kanit:wght@300&family=Lobster&family=Montserrat:wght@300&family=Neonderthaw&family=Orelega+One&family=Pacifico&family=Permanent+Marker&family=Rowdies&family=Rubik+Beastly&family=Rubik+Moonrocks&family=Sacramento&family=Satisfy&family=Signika:wght@300&family=Supermercado+One&family=Syne+Tactile&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mpMaincss.css">
+    <a href="https://www.flaticon.com/free-icons/video" title="video icons"></a>
+    <link rel="stylesheet" media='screen and (max-width: 550px)' href="responsiveAllMobile.css"/>
+    <link rel="stylesheet" media='screen and (min-width:550px) and (max-width: 1000px)' href="responsiveTablet.css"/>
+    <link rel="stylesheet" media='screen and (min-width:1000px) and (max-width: 1300px)' href="responsiveNextHub.css"/>
+</head>
+
+<body>
+    <audio src="songs-audio/song0.mp3" id="songAudio"></audio>
+    <div class="main-container">
+        <div class="heading" id="mainH1">
+            <div class="wrapper-head">
+                <h1>Music Player</h1>
+                <h3>rejoice and rejuvenate </h3>
+                <button id="active-player">Play</button>
+            </div>
+        </div>
+        <div class="music-player">
+            <div id="music-picture">
+                <img src="songs-images/xxxtentacion.jpeg" alt="" id="music-image">
+                <div class="music-overlay">
+                    <div class="music-wrapper">
+                        <h1 id="song-name">Moonlight</h1>
+                        <h2 id="singer-name">XXXtentacion</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="music-controller">
+                <div id="details">
+                    <button id="detailsBtn">Info</button>
+                </div>
+                <div id="main">
+                    <div class="box" id="b1"><img src="play-pause/previous.png" alt="" class="boxI"></div>
+                    <div class="box" id="b2"><img src="play-pause/play-button.png" alt="" class="boxI"></div>
+                    <div class="box" id="b3"><img src="play-pause/play-next-button.png" alt="" class="boxI"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="mainJs.js"></script>
+</body>
+
+</html>
